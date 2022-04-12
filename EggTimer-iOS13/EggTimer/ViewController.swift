@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     let eggTimes: [String: Int] = ["Soft": 3, "Medium": 4, "Hard": 5]
     
     var timer = Timer()
+    var audio: AVPlayer!
     
     @IBAction func hardnessSelected(_ sender: UIButton) {
         if let hardness = sender.currentTitle {
@@ -29,6 +31,7 @@ class ViewController: UIViewController {
                 if (secondsPassed >= totalTime) {
                     timer.invalidate()
                     self.timerLabel.text = "Done!"
+                    self.playAlarm()
                 } else {
                     secondsPassed += 1
                     self.progressView.setProgress(Float(secondsPassed) / Float(totalTime), animated: false)
@@ -39,6 +42,11 @@ class ViewController: UIViewController {
         }
     }
     
+    func playAlarm() {
+        let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
+        self.audio = AVPlayer.init(url: url!)
+        self.audio.play()
+    }
 
 
 }
