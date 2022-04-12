@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var progressView: UIProgressView!
     let eggTimes: [String: Int] = ["Soft": 3, "Medium": 4, "Hard": 5]
     
     var timer = Timer()
@@ -19,14 +20,18 @@ class ViewController: UIViewController {
         if let hardness = sender.currentTitle {
             timer.invalidate()
             
-            var time = eggTimes[hardness]!
+            let totalTime = eggTimes[hardness]!
+            var secondsPassed = 0
+            progressView.setProgress(0, animated: false)
+            timerLabel.text = hardness
             
             timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-                if (time == -1) { timer.invalidate()
+                if (secondsPassed >= totalTime) {
+                    timer.invalidate()
                     self.timerLabel.text = "Done!"
                 } else {
-                    self.timerLabel.text = "\(time) seconds"
-                    time -= 1
+                    secondsPassed += 1
+                    self.progressView.setProgress(Float(secondsPassed) / Float(totalTime), animated: false)
                 }
                 
             }
