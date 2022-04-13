@@ -64,6 +64,7 @@ class ViewController: UIViewController {
             self.trueButton.backgroundColor = UIColor.clear
             self.falseButton.backgroundColor = UIColor.clear
         }
+        progressView.setProgress(Float(questionNum) / Float(quiz.count), animated: true)
     }
 }
 
