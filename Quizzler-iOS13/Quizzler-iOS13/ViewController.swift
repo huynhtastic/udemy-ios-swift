@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var trueButton: UIButton!
@@ -33,6 +34,8 @@ class ViewController: UIViewController {
             sender.backgroundColor = UIColor.red
         }
         
+        quizBrain.nextQuestion()
+        
         updateUI()
         
     }
@@ -40,6 +43,7 @@ class ViewController: UIViewController {
     func updateUI() {
         questionLabel.text = quizBrain.getQuestionText()
         progressView.setProgress(quizBrain.getProgress(), animated: true)
+        scoreLabel.text = "Score: \(quizBrain.getScore())"
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { timer in
             self.trueButton.backgroundColor = UIColor.clear
             self.falseButton.backgroundColor = UIColor.clear
