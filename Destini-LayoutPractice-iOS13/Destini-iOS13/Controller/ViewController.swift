@@ -19,14 +19,24 @@ class ViewController: UIViewController {
         Story(title: "You see a tiger.", choice1: "Shout for help.", choice2: "Play dead."),
         Story(title: "You find a treasure chest.", choice1: "Open it.", choice2: "Check for traps."),
     ]
+    var storyIdx = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        storyLabel.text = stories[0].title
-        choiceOneBtn.setTitle(stories[0].choice1, for: .normal)
-        choiceTwoBtn.setTitle(stories[0].choice2, for: .normal)
+        updateUI()
     }
 
-
+    @IBAction func choiceMade(_ sender: UIButton) {
+        if (sender.currentTitle! == stories[0].choice1) {
+            storyIdx = 1
+        } else {storyIdx = 2}
+        updateUI()
+    }
+    
+    func updateUI() {
+        storyLabel.text = stories[storyIdx].title
+        choiceOneBtn.setTitle(stories[storyIdx].choice1, for: .normal)
+        choiceTwoBtn.setTitle(stories[storyIdx].choice2, for: .normal)
+    }
 }
 
