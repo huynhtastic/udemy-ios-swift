@@ -16,6 +16,8 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var tenPctButton: UIButton!
     @IBOutlet weak var twentyPctButton: UIButton!
     
+    var numToSplit = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -42,9 +44,15 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        numToSplit = Int(sender.value)
+        updateUI()
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
+    }
+    
+    func updateUI() {
+        splitNumLabel.text = String(numToSplit)
     }
 }
 
