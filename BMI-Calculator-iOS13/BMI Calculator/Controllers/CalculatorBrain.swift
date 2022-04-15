@@ -16,6 +16,6 @@ struct CalculatorBrain {
     }
     
     func getBMIValue() -> String {
-        return String(format: "%.1f", bmi)
+        return String(format: "%.1f", bmi ?? 0.0)
     }
 }
