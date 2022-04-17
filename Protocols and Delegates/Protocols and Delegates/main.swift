@@ -1,11 +1,61 @@
-//
-//  main.swift
-//  Protocols and Delegates
-//
-//  Created by Richard Huynh on 4/17/22.
-//
+protocol AdvancedLifeSupport {
+    func performCPR()
+}
 
-import Foundation
+class EmergencyCallHandler {
+    var delegate: AdvancedLifeSupport?
+    
+    func assessSituation() {
+        print("Can you tell me what happened?")
+    }
+    
+    func medicalEmergency() {
+        delegate?.performCPR()
+    }
+}
 
-print("Hello, World!")
+struct Paramedic: AdvancedLifeSupport {
+    init(handler: EmergencyCallHandler) {
+        handler.delegate = self
+    }
+    
+    func performCPR() {
+        print("The paramedic does chest compressions, 30 per second.")
+    }
+}
 
+class Doctor: AdvancedLifeSupport {
+    init(handler: EmergencyCallHandler) {
+        handler.delegate = self
+    }
+    
+    func performCPR() {
+        print("The doctor does chest compressions, 30 per second.")
+    }
+    
+    func useStethoscope() {
+        print("Listening for heart sounds")
+    }
+}
+
+class Surgeon: Doctor {
+    override func performCPR() {
+        super.performCPR()
+        print("Sings staying alive by the BeeGees")
+    }
+    
+    func useElectricDrill() {
+        print("Whirrr...")
+    }
+}
+
+let emilio = EmergencyCallHandler()
+let pete = Paramedic(handler: emilio)
+
+emilio.assessSituation()
+emilio.delegate?.performCPR()
+
+let angela = Surgeon(handler: emilio)
+
+emilio.assessSituation()
+emilio.delegate?.performCPR()
