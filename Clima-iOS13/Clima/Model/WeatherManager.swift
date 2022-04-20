@@ -15,7 +15,7 @@ protocol WeatherManagerDelegate {
 }
 
 class WeatherManager {
-    let weatherURL =  "https://api.openweathermap.org/data/2.5/weather?appid=24ae4a9256c3609ee3bc883fff0e7251&units=imperial"
+    let weatherURL =  "https://api.openweathermap.org/data/2.5/weather?units=imperial"
     
     var delegate: WeatherManagerDelegate?
     
