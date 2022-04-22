@@ -9,10 +9,11 @@
 import Foundation
 
 protocol CoinManagerDelegate {
-    func didUpdatePrice(_ coinManager: CoinManager, price: Double)
+    func didUpdatePrice(data coinData: CoinData)
 }
 
 struct CoinManager {
+    var delegate: CoinManagerDelegate?
     
     let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC"
     
@@ -32,8 +33,8 @@ struct CoinManager {
                     return
                 }
                 if let safeData = data {
-                    if let price = parseJSON(safeData) {
-                        print(price)
+                    if let coinData = parseJSON(safeData) {
+                        self.delegate?.didUpdatePrice(data: coinData)
                     }
                 }
             }
@@ -41,12 +42,11 @@ struct CoinManager {
         }
     }
     
-    func parseJSON(_ data: Data) -> Double? {
+    func parseJSON(_ data: Data) -> CoinData? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(CoinData.self, from: data)
-            print(decodedData)
-            return decodedData.rate
+            return decodedData
         } catch {
             print(error)
             return nil
