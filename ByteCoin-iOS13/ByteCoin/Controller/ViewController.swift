@@ -59,4 +59,8 @@ extension ViewController: CoinManagerDelegate {
             self.bitcoinLabel.text = String(format: "%.2f", data.rate)
         }
     }
+    
+    func didFailWithError(error: Error) {
+        print(error)
+    }
 }
