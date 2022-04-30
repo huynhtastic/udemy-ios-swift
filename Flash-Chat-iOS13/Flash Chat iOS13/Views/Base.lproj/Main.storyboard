@@ -153,14 +153,24 @@
                                     <constraint firstAttribute="trailing" secondItem="jY9-l3-E1g" secondAttribute="trailing" id="y40-C4-FjS"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Rnj-Hb-dgo">
+                                <rect key="frame" x="20" y="392" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="stz-qy-NwU"/>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="trailing" secondItem="stz-qy-NwU" secondAttribute="trailing" id="3Fk-Xo-DV8"/>
+                            <constraint firstAttribute="trailing" secondItem="Rnj-Hb-dgo" secondAttribute="trailing" constant="20" id="BQJ-1Q-IoA"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="trailing" secondItem="stz-qy-NwU" secondAttribute="trailing" id="Tq9-EG-2wo"/>
+                            <constraint firstItem="Rnj-Hb-dgo" firstAttribute="leading" secondItem="h2S-Ae-zdW" secondAttribute="leading" constant="20" id="UOw-Z1-rFS"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="Ub1-7q-3QS"/>
+                            <constraint firstItem="Rnj-Hb-dgo" firstAttribute="centerX" secondItem="h2S-Ae-zdW" secondAttribute="centerX" id="h7M-A6-COg"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="top" secondItem="stz-qy-NwU" secondAttribute="top" id="oh4-tH-9d1"/>
+                            <constraint firstItem="Rnj-Hb-dgo" firstAttribute="top" secondItem="j5s-Lc-WfT" secondAttribute="bottom" constant="50" id="p8e-x7-YXo"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="uog-qO-Id1"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="top" secondItem="Scg-da-zi8" secondAttribute="bottom" constant="-100" id="wib-t6-dnB"/>
                         </constraints>
@@ -168,6 +178,7 @@
                     <navigationItem key="navigationItem" id="0Bz-aG-DhR"/>
                     <connections>
                         <outlet property="emailTextfield" destination="u72-XV-6FN" id="Nfc-8N-TNr"/>
+                        <outlet property="errorLabel" destination="Rnj-Hb-dgo" id="e6D-oJ-Wox"/>
                         <outlet property="passwordTextfield" destination="hLb-P9-NkF" id="uaM-fo-m8M"/>
                         <segue destination="lwd-AH-u8E" kind="show" identifier="RegisterToChat" id="8NB-NJ-AyN"/>
                     </connections>
@@ -373,7 +384,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZaR-Il-o8W"/>
+        <segue reference="8NB-NJ-AyN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
