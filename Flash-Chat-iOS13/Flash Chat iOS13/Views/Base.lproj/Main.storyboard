@@ -258,21 +258,31 @@
                                     <constraint firstItem="mZe-tG-Gm8" firstAttribute="leading" secondItem="7JT-7R-lw4" secondAttribute="leading" id="scf-xJ-Rnr"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="JQe-fr-z0G">
+                                <rect key="frame" x="20" y="442" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ibK-5F-w36"/>
                         <color key="backgroundColor" red="0.1647058824" green="0.78039215689999997" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="leading" secondItem="ibK-5F-w36" secondAttribute="leading" id="2C5-yn-42W"/>
+                            <constraint firstItem="JQe-fr-z0G" firstAttribute="top" secondItem="7JT-7R-lw4" secondAttribute="bottom" constant="100" id="2yO-FU-KRl"/>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="top" secondItem="ibK-5F-w36" secondAttribute="top" id="HHp-L5-4dK"/>
+                            <constraint firstItem="ibK-5F-w36" firstAttribute="trailing" secondItem="JQe-fr-z0G" secondAttribute="trailing" constant="20" id="avT-CX-GiG"/>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="trailing" secondItem="ibK-5F-w36" secondAttribute="trailing" id="b5A-nE-cpV"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="leading" secondItem="ibK-5F-w36" secondAttribute="leading" id="dag-ZR-y4c"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="trailing" secondItem="ibK-5F-w36" secondAttribute="trailing" id="mpt-SH-Lld"/>
+                            <constraint firstItem="JQe-fr-z0G" firstAttribute="leading" secondItem="ibK-5F-w36" secondAttribute="leading" constant="20" id="mvX-2R-bJe"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="top" secondItem="Mkq-A4-A98" secondAttribute="bottom" constant="-100" id="yL0-RW-8ad"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FuR-3R-5ia"/>
                     <connections>
                         <outlet property="emailTextfield" destination="F21-w0-z4z" id="YUG-Hl-Rxj"/>
+                        <outlet property="errorLabel" destination="JQe-fr-z0G" id="W5W-Pv-Wl2"/>
                         <outlet property="passwordTextfield" destination="abR-gz-opL" id="xCU-X2-hrx"/>
                         <segue destination="lwd-AH-u8E" kind="show" identifier="LoginToChat" id="ZaR-Il-o8W"/>
                     </connections>
