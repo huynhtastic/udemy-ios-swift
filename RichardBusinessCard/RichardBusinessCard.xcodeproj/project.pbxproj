@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		926716FE282363400011CFA4 /* RichardBusinessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926716FD282363400011CFA4 /* RichardBusinessCardApp.swift */; };
+		92671700282363400011CFA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926716FF282363400011CFA4 /* ContentView.swift */; };
+		92671702282363410011CFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92671701282363410011CFA4 /* Assets.xcassets */; };
+		92671705282363410011CFA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92671704282363410011CFA4 /* Preview Assets.xcassets */; };
+		9267170F282363410011CFA4 /* RichardBusinessCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267170E282363410011CFA4 /* RichardBusinessCardTests.swift */; };
+		92671719282363410011CFA4 /* RichardBusinessCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92671718282363410011CFA4 /* RichardBusinessCardUITests.swift */; };
+		9267171B282363410011CFA4 /* RichardBusinessCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267171A282363410011CFA4 /* RichardBusinessCardUITestsLaunchTests.swift */; };
+		92671729282364760011CFA4 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92671728282364760011CFA4 /* Pacifico-Regular.ttf */; };
+		9267172E282368FA0011CFA4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9267172D282368FA0011CFA4 /* InfoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9267170B282363410011CFA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 926716F2282363400011CFA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 926716F9282363400011CFA4;
+			remoteInfo = RichardBusinessCard;
+		};
+		92671715282363410011CFA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 926716F2282363400011CFA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 926716F9282363400011CFA4;
+			remoteInfo = RichardBusinessCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		926716FA282363400011CFA4 /* RichardBusinessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichardBusinessCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		926716FD282363400011CFA4 /* RichardBusinessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichardBusinessCardApp.swift; sourceTree = "<group>"; };
+		926716FF282363400011CFA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92671701282363410011CFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92671704282363410011CFA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9267170A282363410011CFA4 /* RichardBusinessCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichardBusinessCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9267170E282363410011CFA4 /* RichardBusinessCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichardBusinessCardTests.swift; sourceTree = "<group>"; };
+		92671714282363410011CFA4 /* RichardBusinessCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichardBusinessCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92671718282363410011CFA4 /* RichardBusinessCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichardBusinessCardUITests.swift; sourceTree = "<group>"; };
+		9267171A282363410011CFA4 /* RichardBusinessCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichardBusinessCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92671728282364760011CFA4 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		9267172A282364DF0011CFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9267172D282368FA0011CFA4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		926716F7282363400011CFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92671707282363410011CFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92671711282363410011CFA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		926716F1282363400011CFA4 = {
+			isa = PBXGroup;
+			children = (
+				926716FC282363400011CFA4 /* RichardBusinessCard */,
+				9267170D282363410011CFA4 /* RichardBusinessCardTests */,
+				92671717282363410011CFA4 /* RichardBusinessCardUITests */,
+				926716FB282363400011CFA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		926716FB282363400011CFA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				926716FA282363400011CFA4 /* RichardBusinessCard.app */,
+				9267170A282363410011CFA4 /* RichardBusinessCardTests.xctest */,
+				92671714282363410011CFA4 /* RichardBusinessCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		926716FC282363400011CFA4 /* RichardBusinessCard */ = {
+			isa = PBXGroup;
+			children = (
+				9267172A282364DF0011CFA4 /* Info.plist */,
+				926717272823645E0011CFA4 /* fonts */,
+				926716FD282363400011CFA4 /* RichardBusinessCardApp.swift */,
+				926716FF282363400011CFA4 /* ContentView.swift */,
+				9267172D282368FA0011CFA4 /* InfoView.swift */,
+				92671701282363410011CFA4 /* Assets.xcassets */,
+				92671703282363410011CFA4 /* Preview Content */,
+			);
+			path = RichardBusinessCard;
+			sourceTree = "<group>";
+		};
+		92671703282363410011CFA4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92671704282363410011CFA4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9267170D282363410011CFA4 /* RichardBusinessCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				9267170E282363410011CFA4 /* RichardBusinessCardTests.swift */,
+			);
+			path = RichardBusinessCardTests;
+			sourceTree = "<group>";
+		};
+		92671717282363410011CFA4 /* RichardBusinessCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92671718282363410011CFA4 /* RichardBusinessCardUITests.swift */,
+				9267171A282363410011CFA4 /* RichardBusinessCardUITestsLaunchTests.swift */,
+			);
+			path = RichardBusinessCardUITests;
+			sourceTree = "<group>";
+		};
+		926717272823645E0011CFA4 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				92671728282364760011CFA4 /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		926716F9282363400011CFA4 /* RichardBusinessCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9267171E282363410011CFA4 /* Build configuration list for PBXNativeTarget "RichardBusinessCard" */;
+			buildPhases = (
+				926716F6282363400011CFA4 /* Sources */,
+				926716F7282363400011CFA4 /* Frameworks */,
+				926716F8282363400011CFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichardBusinessCard;
+			productName = RichardBusinessCard;
+			productReference = 926716FA282363400011CFA4 /* RichardBusinessCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92671709282363410011CFA4 /* RichardBusinessCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92671721282363410011CFA4 /* Build configuration list for PBXNativeTarget "RichardBusinessCardTests" */;
+			buildPhases = (
+				92671706282363410011CFA4 /* Sources */,
+				92671707282363410011CFA4 /* Frameworks */,
+				92671708282363410011CFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9267170C282363410011CFA4 /* PBXTargetDependency */,
+			);
+			name = RichardBusinessCardTests;
+			productName = RichardBusinessCardTests;
+			productReference = 9267170A282363410011CFA4 /* RichardBusinessCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92671713282363410011CFA4 /* RichardBusinessCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92671724282363410011CFA4 /* Build configuration list for PBXNativeTarget "RichardBusinessCardUITests" */;
+			buildPhases = (
+				92671710282363410011CFA4 /* Sources */,
+				92671711282363410011CFA4 /* Frameworks */,
+				92671712282363410011CFA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92671716282363410011CFA4 /* PBXTargetDependency */,
+			);
+			name = RichardBusinessCardUITests;
+			productName = RichardBusinessCardUITests;
+			productReference = 92671714282363410011CFA4 /* RichardBusinessCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		926716F2282363400011CFA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					926716F9282363400011CFA4 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					92671709282363410011CFA4 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 926716F9282363400011CFA4;
+					};
+					92671713282363410011CFA4 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 926716F9282363400011CFA4;
+					};
+				};
+			};
+			buildConfigurationList = 926716F5282363400011CFA4 /* Build configuration list for PBXProject "RichardBusinessCard" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 926716F1282363400011CFA4;
+			productRefGroup = 926716FB282363400011CFA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				926716F9282363400011CFA4 /* RichardBusinessCard */,
+				92671709282363410011CFA4 /* RichardBusinessCardTests */,
+				92671713282363410011CFA4 /* RichardBusinessCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		926716F8282363400011CFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92671729282364760011CFA4 /* Pacifico-Regular.ttf in Resources */,
+				92671705282363410011CFA4 /* Preview Assets.xcassets in Resources */,
+				92671702282363410011CFA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92671708282363410011CFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92671712282363410011CFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		926716F6282363400011CFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92671700282363400011CFA4 /* ContentView.swift in Sources */,
+				9267172E282368FA0011CFA4 /* InfoView.swift in Sources */,
+				926716FE282363400011CFA4 /* RichardBusinessCardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92671706282363410011CFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9267170F282363410011CFA4 /* RichardBusinessCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92671710282363410011CFA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9267171B282363410011CFA4 /* RichardBusinessCardUITestsLaunchTests.swift in Sources */,
+				92671719282363410011CFA4 /* RichardBusinessCardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9267170C282363410011CFA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 926716F9282363400011CFA4 /* RichardBusinessCard */;
+			targetProxy = 9267170B282363410011CFA4 /* PBXContainerItemProxy */;
+		};
+		92671716282363410011CFA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 926716F9282363400011CFA4 /* RichardBusinessCard */;
+			targetProxy = 92671715282363410011CFA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9267171C282363410011CFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9267171D282363410011CFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9267171F282363410011CFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RichardBusinessCard/Preview Content\"";
+				DEVELOPMENT_TEAM = SDH5Q76F69;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RichardBusinessCard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardhuynh.RichardBusinessCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92671720282363410011CFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RichardBusinessCard/Preview Content\"";
+				DEVELOPMENT_TEAM = SDH5Q76F69;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RichardBusinessCard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardhuynh.RichardBusinessCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92671722282363410011CFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDH5Q76F69;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardhuynh.RichardBusinessCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RichardBusinessCard.app/RichardBusinessCard";
+			};
+			name = Debug;
+		};
+		92671723282363410011CFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDH5Q76F69;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardhuynh.RichardBusinessCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RichardBusinessCard.app/RichardBusinessCard";
+			};
+			name = Release;
+		};
+		92671725282363410011CFA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDH5Q76F69;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardhuynh.RichardBusinessCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RichardBusinessCard;
+			};
+			name = Debug;
+		};
+		92671726282363410011CFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDH5Q76F69;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardhuynh.RichardBusinessCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RichardBusinessCard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		926716F5282363400011CFA4 /* Build configuration list for PBXProject "RichardBusinessCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9267171C282363410011CFA4 /* Debug */,
+				9267171D282363410011CFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9267171E282363410011CFA4 /* Build configuration list for PBXNativeTarget "RichardBusinessCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9267171F282363410011CFA4 /* Debug */,
+				92671720282363410011CFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92671721282363410011CFA4 /* Build configuration list for PBXNativeTarget "RichardBusinessCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92671722282363410011CFA4 /* Debug */,
+				92671723282363410011CFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92671724282363410011CFA4 /* Build configuration list for PBXNativeTarget "RichardBusinessCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92671725282363410011CFA4 /* Debug */,
+				92671726282363410011CFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 926716F2282363400011CFA4 /* Project object */;
+}
